@@ -1,3 +1,6 @@
+# Ignore meson build dirs
+build*
+
 # Compiled Object files
 *.slo
 *.lo
