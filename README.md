@@ -1,1 +1,1 @@
-# An effort to write a communication app.
+An effort to write a communication app.
