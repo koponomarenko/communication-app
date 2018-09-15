@@ -1,3 +1,9 @@
-project('communication-app', 'cpp', default_options : ['cpp_std=c++11'])
-src = ['main.cpp']
-executable('communication-app', sources : src)
+project(
+    'communication-app',
+    'cpp',
+    version : '0.1',
+    default_options : ['warning_level=3', 'cpp_std=c++14']
+)
+
+subdir('server')
+subdir('client')
