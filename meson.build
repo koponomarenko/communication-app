@@ -2,7 +2,11 @@ project(
     'communication-app',
     'cpp',
     version : '0.1',
-    default_options : ['warning_level=3', 'cpp_std=c++14']
+    default_options : [
+        'cpp_std=c++14',
+        'warning_level=3',
+        'werror=true'
+    ]
 )
 
 subdir('server')

@@ -1,3 +1,8 @@
+# Vim .swp
+*.swp
+
+*.autosave
+
 # Ignore meson build dirs
 build*
 
