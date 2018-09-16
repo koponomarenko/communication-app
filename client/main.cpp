@@ -1,7 +1,14 @@
 #include "client.hpp"
 
+#include <stdexcept>
+#include <iostream>
+
 int main()
 {
-    Client client;
-    client.run();
+    try {
+        Client client;
+        client.start();
+    } catch (const std::exception& e) {
+        std::cerr << e.what() << std::endl;
+    }
 }

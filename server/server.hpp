@@ -4,7 +4,13 @@
 class Server
 {
 public:
-    void run();
+    Server();
+    ~Server();
+
+    void start();
+
+private:
+    int listener_socket_;
 };
 
 #endif

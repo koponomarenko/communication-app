@@ -1,7 +1,14 @@
 #include "server.hpp"
 
+#include <stdexcept>
+#include <iostream>
+
 int main()
 {
-    Server server;
-    server.run();
+    try {
+        Server server;
+        server.start();
+    } catch (const std::exception& e) {
+        std::cerr << e.what() << std::endl;
+    }
 }
