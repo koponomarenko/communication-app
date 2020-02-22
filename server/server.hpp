@@ -1,8 +1,7 @@
 #ifndef SERVER_HPP_
 #define SERVER_HPP_
 
-class Server
-{
+class Server {
 public:
     Server();
     ~Server();

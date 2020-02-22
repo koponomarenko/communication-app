@@ -3,8 +3,7 @@
 
 #include <netinet/in.h>
 
-class Client
-{
+class Client {
 public:
     Client();
     ~Client();
