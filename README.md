@@ -15,13 +15,18 @@ $ pip install -U --user conan
 
 #### Configure profile
 *one-time action*
+Generates default profile detecting GCC and sets old ABI:
 ```
-$ conan profile new ~/.conan/profiles/my-default --detect
+$ conan profile new default --detect
+```
+Sets libcxx to C++11 ABI:
+```
+$ conan profile update settings.compiler.libcxx=libstdc++11 default
 ```
 
 #### Configure project dependencies
 ```
 $ cd <proj_dir>
 $ mkdir cmake-build-release && cd cmake-build-release
-$ conan install .. -u -pr my-default --b missing -r conancenter
+$ conan install .. -u -pr default -b missing -r conancenter
 ```
