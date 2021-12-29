@@ -14,7 +14,13 @@ $ pip install -U --user conan
 ```
 
 #### Configure profile
-*one-time action*
+*This is a one-time action.*
+
+If you need to use a different conan config, set a custom conan base directory via this variable:
+```
+export CONAN_USER_HOME=~/.my-conan
+```
+
 Generates default profile detecting GCC and sets old ABI:
 ```
 $ conan profile new default --detect
@@ -28,5 +34,5 @@ $ conan profile update settings.compiler.libcxx=libstdc++11 default
 ```
 $ cd <proj_dir>
 $ mkdir cmake-build-release && cd cmake-build-release
-$ conan install .. -u -pr default -b missing -r conancenter
+$ conan install .. -u -pr default -b missing
 ```
